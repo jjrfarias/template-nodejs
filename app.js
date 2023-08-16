@@ -9,7 +9,7 @@ app.use(express.urlencoded({
 )
 app.use(express.json())
 
-app.get('/login', (req, res) => {
+app.get('/', (req, res) => {
 
     res.sendFile('public/index.html');
 })
