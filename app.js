@@ -11,7 +11,7 @@ app.use(express.json())
 
 app.get('/login', (req, res) => {
 
-    res.redirect('/index.html');
+    res.sendFile('public/index.html');
 })
 
 app.post('/views/index', (req,res) =>{
